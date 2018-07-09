@@ -11,7 +11,7 @@ Implementacion de Corba RMI en java
 
 ## Table of contents
 
-- [Requerimientos](requerimientos)
+- [Requerimientos](#requerimientos)
 - [Documentation](#documentation)
 - [Quick start](#quick-start)
 
