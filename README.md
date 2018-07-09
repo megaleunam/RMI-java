@@ -21,9 +21,10 @@ Implementacion de Corba RMI en java
 - idlj
 
 ## Quick start
-- Clonar el repositorio : `git clone https://github.com/megaleunam/RMI-java.git`
-- Para el uso del lenguaje de definición de interfaz (IDL) en java es necesario usar idlj el cual viene incluído en el JDK de java para empezar debemos tener instalado el JDK de java, e incluir en las variables de entorno la dirección del idlj que se encuentra en `C:\Program Files\Java\{{JDK versión}}\bin`, 
-- Ubicado en el directorio raíz del proyecto abrimos la consola y ejecutamos: >`idlj -fall ClienteRemoto.idl`
+- Clonar el repositorio : `git clone https://github.com/megaleunam/RMI-java.git`.
+- Para el uso del lenguaje de definición de interfaz (IDL) en java es necesario usar idlj el cual viene incluído en el JDK de java para empezar debemos tener instalado el JDK de java, e incluir en las variables de entorno la dirección del idlj que se encuentra en `C:\Program Files\Java\{{JDK versión}}\bin`. 
+- Ubicado en el directorio raíz del proyecto abrimos la consola y ejecutamos: >`idlj -fall ClienteRemoto.idl`, este comando creará un directorio con el nombre del archivo idl: `ClienteRemoto`, el cual contendrá las clases generadas a partir del archivo idl las cualés son necesarias para la implementación del objeto.
+- `ClienteRemImpl.java` es una extensión del archivo: `ClienteRemPOA` ubicado en el directorio generado por el `idlj`
 
 ## Documentation
 
