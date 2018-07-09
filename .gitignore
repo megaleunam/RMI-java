@@ -22,8 +22,8 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-#omitir directorio de objeto ORM
-orm.db/
+#omitir directorio de objeto ORB
+orb.db/
 
 #directorio de interface de RMI
 ClienteRemoto/
