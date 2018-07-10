@@ -4,9 +4,6 @@ Implementacion de Corba RMI en java
 
   <h3 align="center">Implementación de CORBA RMI en java</h3>
 
-  <p align="center">
-    
-  </p>
 </p>
 
 ## Table of contents
