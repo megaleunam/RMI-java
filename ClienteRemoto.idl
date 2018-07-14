@@ -1,6 +1,6 @@
 module ClienteRemoto{
               interface ClienteRem
              {
-                   string Saludar(in string nombre);
+                   string Saludar(in string nombre,in string apellido,in string cedula);
       };
 };
