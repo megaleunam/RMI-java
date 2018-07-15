@@ -1,3 +1,4 @@
+
 import org.omg.CORBA.*;
 import org.omg.CosNaming.*;
 import org.omg.CosNaming.NamingContextPackage.*;
@@ -18,10 +19,11 @@ public class Cliente {
       String name = form.getNombre();
       String lastname = form.getApellido();
       String ci = form.getCedula();
+      String fn = form.getFechaN();
       
       String nombre = "ClienteRemoto";
       ClienteRemoto.ClienteRem impl =ClienteRemoto.ClienteRemHelper.narrow(ncRef.resolve_str(nombre));
-      System.out.println(impl.Saludar(name,lastname,ci));
+      System.out.println(impl.Saludar(name,lastname,ci,fn));
     }catch (Exception e) {
       System.out.println("ERROR : " + e);
       e.printStackTrace(System.out);

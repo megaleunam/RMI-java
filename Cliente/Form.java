@@ -1,3 +1,4 @@
+
 import java.util.Scanner; 
 
 public class Form {
@@ -25,7 +26,7 @@ public class Form {
     entradaTeclado = entradaEscaner.nextLine ();
     setCedula(entradaTeclado);
     entradaTeclado = "";
-    System.out.println ("Introduzca su fecha de nacimiento:");
+    System.out.println ("Introduzca su fecha de nacimiento (dd/mm/aa): ");
     entradaTeclado = entradaEscaner.nextLine ();
     setFechaN(entradaTeclado);
     entradaTeclado = "";
