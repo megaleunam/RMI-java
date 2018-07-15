@@ -11,6 +11,8 @@ Implementacion de Corba RMI en java
 - [Requerimientos](#requerimientos)
 - [Documentation](#documentation)
 - [Quick start](#quick-start)
+- [Archivo IDL](#archivo-idl)
+- [Autores](#autores)
 
 ## Requerimientos
 
@@ -36,9 +38,27 @@ Documentación de referencia usada para la impementación:
 - Ejemplo Hola mundo (Cliente): <https://docs.oracle.com/javase/1.5.0/docs/guide/idl/tutorial/GSapp.html>
 - Ejemplo Hola mundo (Servidor): <https://docs.oracle.com/javase/1.5.0/docs/guide/idl/tutorial/GSserver.html>
 
+## Archivo IDL
 
+Este es el archivo de la interfaz impementada
+`ClienteRemoto.idl`:
 
 ```
-
+module ClienteRemoto{
+              interface ClienteRem
+             {
+                   string Saludar(
+                   in string nombre,
+                   in string apellido,
+                   in string cedula,
+                   in string fechaNacimiento);
+      };
+};
 ```
+
+## Autores
+- Luis M. Mariño
+- Daniela Arbelaez
+
+
 
