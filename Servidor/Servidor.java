@@ -13,13 +13,15 @@ public class Servidor{
     try {
     // crear e inicializar ORB
       ORB orb = ORB.init(args, null);
-      // crear un objeto remoto
-      ClienteRemImpl impl = new ClienteRemImpl();
+      
       // obtener referencia rootpoa y activar el POAManager
       POA rootpoa = POAHelper.narrow(orb.resolve_initial_references("RootPOA"));
       rootpoa.the_POAManager().activate();
       // obtener una referencia al objeto remoto
+      // crear un objeto remoto
+      ClienteRemImpl impl = new ClienteRemImpl();
       org.omg.CORBA.Object ref = rootpoa.servant_to_reference(impl);
+
       ClienteRem href =  ClienteRemHelper.narrow(ref);
       // las siguientes lineas me permiten publicar un obj remoto
       org.omg.CORBA.Object objRef = orb.resolve_initial_references("NameService");
@@ -29,6 +31,11 @@ public class Servidor{
       NameComponent path[] = ncRef.to_name(nombre);
       // publicar el objeto
       ncRef.rebind(path, href);
+      System.out.println(ncRef);
+      System.out.println(href);
+      System.out.println(path[0].kind);
+      System.out.println(path[0].id);
+
       // ejecutar el orb
             orb.run();
       } catch (Exception e) {

@@ -11,6 +11,7 @@ Implementacion de Corba RMI en java
 - [Requerimientos](#requerimientos)
 - [Documentation](#documentation)
 - [Quick start](#quick-start)
+- [Cliente python](#cliente-python)
 - [Archivo IDL](#archivo-idl)
 - [Autores](#autores)
 
@@ -25,10 +26,13 @@ Implementacion de Corba RMI en java
 - Ubicado en el directorio raíz del proyecto abrimos la consola y ejecutamos: >`idlj -fall ClienteRemoto.idl`, este comando creará un directorio con el nombre del archivo idl: `ClienteRemoto`, el cual contendrá las clases generadas a partir del archivo idl las cualés son necesarias para la implementación del objeto.
 - `ClienteRemImpl.java` es una extensión del archivo: `ClienteRemPOA` ubicado en el directorio generado por el `idlj`
 - Ejecutar `javac *.java` para compilar los archivos java incluyendo los archivos del repositorio: `ClienteRemoto`.
-- En una terminal nueva ejecutar: `orbd -ORBInitialPort 7890` iniciar el objeto ORBD que es el canal de comunicación entre aplicaciones IDL java, estableciendo `7890` como puerto de comunicación.
-- ejecutar el servidor: `java Servidor -ORBInitialPort 7890`, pasando como referencia el objeto ORBD con el puerto de comunicación
-- ejecutar el cliente: `java Cliente -ORBInitialPort 7890`, pasando como referencia el objeto ORBD con el puerto de comunicación
+- En una terminal nueva ejecutar: `orbd -ORBInitialPort 2809` iniciar el objeto ORBD que es el canal de comunicación entre aplicaciones IDL java, estableciendo `2809` como puerto de comunicación.
+- ejecutar el servidor: `java Servidor -ORBInitialPort 2809 -ORBInitialHost localhost`, pasando como referencia el objeto ORBD con el puerto de comunicación
+- ejecutar el cliente: `java Cliente -ORBInitialPort 2809`, pasando como referencia el objeto ORBD con el puerto de comunicación
 
+## Cliente python
+
+- Para la implementación en python es necesario usar la librería omniORB, usaremos el comando omniidj de la libreria, ejecutamos este comando en un terminal > `omniidl -bpython ClienteRemoto.idl`, el cual creará los archivos necesarios para la implementación.
 
 ## Documentation
 
