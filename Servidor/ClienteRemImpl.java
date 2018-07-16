@@ -22,8 +22,9 @@ public class ClienteRemImpl extends ClienteRemPOA
     	}catch (ParseException e) {
             e.printStackTrace();
         }
-        
-        return "Hola, "+nombre +" "+apellido+" su cedula es : "+cedula+" edad:"+ Integer.toString(edad) +" a#os"+" avatar:"+generarAvatar(nombre);
+        String response= "Hola, "+nombre +" "+apellido+" su cedula es : "+cedula+" edad:"+ Integer.toString(edad) +" a#os"+" avatar:"+generarAvatar(nombre);
+        System.out.println("Respondiendo: " + response);
+        return response;
     }
 	private static int calcularEdad(Calendar fechaNac) {
 	    Calendar today = Calendar.getInstance();

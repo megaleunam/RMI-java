@@ -41,4 +41,5 @@ ci = "20.507.960"
 fecha = "03/03/1990"
 result  = eo.Saludar(nombre,apellido,ci,fecha)
 
-print ("I said '%s'. The object said '%s'." % (message,result))
+print ("enviando %s %s %s %s " % (nombre,apellido,ci,fecha))
+print ("respuesta %s" % (result))

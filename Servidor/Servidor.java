@@ -31,10 +31,6 @@ public class Servidor{
       NameComponent path[] = ncRef.to_name(nombre);
       // publicar el objeto
       ncRef.rebind(path, href);
-      System.out.println(ncRef);
-      System.out.println(href);
-      System.out.println(path[0].kind);
-      System.out.println(path[0].id);
 
       // ejecutar el orb
             orb.run();
