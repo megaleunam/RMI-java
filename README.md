@@ -32,7 +32,11 @@ Implementacion de Corba RMI en java
 
 ## Cliente python
 
-- Para la implementación en python es necesario usar la librería omniORB, usaremos el comando omniidj de la libreria, ejecutamos este comando en un terminal > `omniidl -bpython ClienteRemoto.idl`, el cual creará los archivos necesarios para la implementación.
+- Dependencias: python-omniorb, omniidl, omniidl-python, omniorb, omniorb-nameserver 
+- La implementación en python cliente fue realizada en linux usando python 2.7.
+- Es necesario instalar `omniorb` para python en ubuntu, para ello ejecutamos el siguiente comando en la consola `sudo apt-get install omniorb python omniorb omniidl omniidl-python`
+- Usaremos el comando omniidj de la libreria, ejecutamos este comando en un terminal > `omniidl -bpython ClienteRemoto.idl`, el cual creará los archivos necesarios para la implementación.
+- Por último ejecutamos `python cliente.py`
 
 ## Documentation
 

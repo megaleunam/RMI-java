@@ -34,9 +34,11 @@ if eo is None:
     print ("Object reference is not an Example::Echo")
     sys.exit(1)
 
-# Invoke the echoString operation
-message = "Hello from Python"
-fecha = "03/03/1983"
-result  = eo.Saludar(message,message,message,fecha)
+# Invoke the Saludar operation
+nombre = "Daniela"
+apellido = "Arbelaez"
+ci = "20.507.960"
+fecha = "03/03/1990"
+result  = eo.Saludar(nombre,apellido,ci,fecha)
 
 print ("I said '%s'. The object said '%s'." % (message,result))
